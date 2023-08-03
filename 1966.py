@@ -1,11 +1,11 @@
-from collections import deque #queue 함수
+from collections import deque #deque 함수
 import sys
 input = sys.stdin.readline
 
 for _ in range(int(input())):
     a, b = map(int, input().split())
     tqueue = deque(map(int, input().split())) #큐 선언 후 집어넣을 값 입력받기
-    init = deque(x for x in range(len(tqueue)))
+    init = deque(x for x in range(len(tqueue))) #초기 인덱스값
     target = tqueue[b]
     th = 0 #몇번째로 출력되는지
     

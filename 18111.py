@@ -1,11 +1,12 @@
 import sys
 
 input = sys.stdin.readline
-n, m, b = map(int, sys.stdin.readline().split())
+n, m, b = map(int, input().split())
+
 answer = sys.maxsize
 idx = 0
 
-arr = [list(map(int, sys.stdin.readline().split()))for _ in range(n)]
+arr = [list(map(int, input().split()))for _ in range(n)]
 	
 for floor in range(257): #층
     exceed_block, lack_block = 0, 0 #제거, 추가 해야하는 블럭 수

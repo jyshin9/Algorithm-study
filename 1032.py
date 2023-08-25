@@ -5,4 +5,6 @@ n = int(input())
 words= []
 
 for i in range(n):
-    words[i].append()
+    words[i].append(input())
+
+for j in words:
